@@ -1,0 +1,450 @@
+[{
+  "_id": 765,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:16.000Z"
+  },
+  "amount": 110,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 279,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:16.000Z"
+  },
+  "amount": 160,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 492,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:16.000Z"
+  },
+  "amount": 210,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 826,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:16.000Z"
+  },
+  "amount": 270,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 696,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:16.000Z"
+  },
+  "amount": 300,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 105,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:16.000Z"
+  },
+  "amount": 120,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 418,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:16.000Z"
+  },
+  "amount": 170,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 573,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 220,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 734,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 280,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 847,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 110,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 937,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 130,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 581,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 180,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 206,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 230,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 389,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 290,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 652,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 120,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 980,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 140,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 754,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 190,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 125,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 240,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 560,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 100,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 430,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:17.000Z"
+  },
+  "amount": 130,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 103,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 150,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 786,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 200,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 531,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 250,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 214,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 110,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 889,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 140,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 369,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 160,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 633,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 210,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 987,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 260,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 181,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 120,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 567,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 150,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 491,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 170,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 929,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 220,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 142,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 270,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 700,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:18.000Z"
+  },
+  "amount": 130,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 748,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 160,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 277,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 180,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 602,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 230,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 133,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 280,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 923,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 140,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 354,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 170,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 827,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 190,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 107,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 240,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 438,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 290,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 286,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 150,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 723,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 180,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 817,
+  "userId": 1,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 200,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 146,
+  "userId": 2,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 250,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 402,
+  "userId": 3,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 100,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 554,
+  "userId": 4,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 130,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+},
+{
+  "_id": 913,
+  "userId": 5,
+  "date": {
+    "$date": "2023-08-30T00:01:19.000Z"
+  },
+  "amount": 160,
+  "_class": "com.cjava.sales.domain.entities.Sale"
+}]
