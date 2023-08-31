@@ -1,0 +1,7 @@
+# Project and Ribbon Balance Configuration
+spring:
+  application:
+    name: cjava-client
+cjava-sales:
+  ribbon:
+    listOfServers: localhost:8083,localhost:8087,localhost:8088,localhost:8089,localhost:8090
