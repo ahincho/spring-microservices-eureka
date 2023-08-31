@@ -1,0 +1,885 @@
+{
+	"info": {
+		"_postman_id": "40c04eca-d893-45af-873e-e7fdf9bfbc68",
+		"name": "Sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28629003"
+	},
+	"item": [
+		{
+			"name": "MySQL",
+			"item": [
+				{
+					"name": "Get Sales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mysql}}/{{sales}}",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sale By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mysql}}/{{sales}}/49",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mysql}}/{{sales}}/user/5",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Sale",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 6,\r\n    \"amount\": 100.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mysql}}/{{sales}}",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Sale",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 7,\r\n    \"amount\": 150.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mysql}}/{{sales}}/51",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Sale",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mysql}}/{{sales}}/51",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Amount By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mysql}}/{{sales}}/amount/1",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"amount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mysql}}/{{sales}}/healthcheck",
+							"host": [
+								"{{mysql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MongoDB",
+			"item": [
+				{
+					"name": "Populate Initial Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"id\": 765,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:16\",\r\n    \"amount\": 110.0\r\n  },\r\n  {\r\n    \"id\": 279,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:16\",\r\n    \"amount\": 160.0\r\n  },\r\n  {\r\n    \"id\": 492,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:16\",\r\n    \"amount\": 210.0\r\n  },\r\n  {\r\n    \"id\": 826,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:16\",\r\n    \"amount\": 270.0\r\n  },\r\n  {\r\n    \"id\": 696,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:16\",\r\n    \"amount\": 300.0\r\n  },\r\n  {\r\n    \"id\": 105,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:16\",\r\n    \"amount\": 120.0\r\n  },\r\n  {\r\n    \"id\": 418,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:16\",\r\n    \"amount\": 170.0\r\n  },\r\n  {\r\n    \"id\": 573,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 220.0\r\n  },\r\n  {\r\n    \"id\": 734,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 280.0\r\n  },\r\n  {\r\n    \"id\": 847,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 110.0\r\n  },\r\n  {\r\n    \"id\": 937,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 130.0\r\n  },\r\n  {\r\n    \"id\": 581,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 180.0\r\n  },\r\n  {\r\n    \"id\": 206,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 230.0\r\n  },\r\n  {\r\n    \"id\": 389,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 290.0\r\n  },\r\n  {\r\n    \"id\": 652,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 120.0\r\n  },\r\n  {\r\n    \"id\": 980,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 140.0\r\n  },\r\n  {\r\n    \"id\": 754,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 190.0\r\n  },\r\n  {\r\n    \"id\": 125,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 240.0\r\n  },\r\n  {\r\n    \"id\": 560,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 100.0\r\n  },\r\n  {\r\n    \"id\": 430,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:17\",\r\n    \"amount\": 130.0\r\n  },\r\n  {\r\n    \"id\": 103,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 150.0\r\n  },\r\n  {\r\n    \"id\": 786,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 200.0\r\n  },\r\n  {\r\n    \"id\": 531,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 250.0\r\n  },\r\n  {\r\n    \"id\": 214,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 110.0\r\n  },\r\n  {\r\n    \"id\": 889,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 140.0\r\n  },\r\n  {\r\n    \"id\": 369,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 160.0\r\n  },\r\n  {\r\n    \"id\": 633,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 210.0\r\n  },\r\n  {\r\n    \"id\": 987,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 260.0\r\n  },\r\n  {\r\n    \"id\": 181,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 120.0\r\n  },\r\n  {\r\n    \"id\": 567,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 150.0\r\n  },\r\n  {\r\n    \"id\": 491,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 170.0\r\n  },\r\n  {\r\n    \"id\": 929,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 220.0\r\n  },\r\n  {\r\n    \"id\": 142,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 270.0\r\n  },\r\n  {\r\n    \"id\": 700,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:18\",\r\n    \"amount\": 130.0\r\n  },\r\n  {\r\n    \"id\": 748,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 160.0\r\n  },\r\n  {\r\n    \"id\": 277,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 180.0\r\n  },\r\n  {\r\n    \"id\": 602,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 230.0\r\n  },\r\n  {\r\n    \"id\": 133,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 280.0\r\n  },\r\n  {\r\n    \"id\": 923,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 140.0\r\n  },\r\n  {\r\n    \"id\": 354,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 170.0\r\n  },\r\n  {\r\n    \"id\": 827,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 190.0\r\n  },\r\n  {\r\n    \"id\": 107,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 240.0\r\n  },\r\n  {\r\n    \"id\": 438,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 290.0\r\n  },\r\n  {\r\n    \"id\": 286,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 150.0\r\n  },\r\n  {\r\n    \"id\": 723,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 180.0\r\n  },\r\n  {\r\n    \"id\": 817,\r\n    \"userId\": 1,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 200.0\r\n  },\r\n  {\r\n    \"id\": 146,\r\n    \"userId\": 2,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 250.0\r\n  },\r\n  {\r\n    \"id\": 402,\r\n    \"userId\": 3,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 100.0\r\n  },\r\n  {\r\n    \"id\": 554,\r\n    \"userId\": 4,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 130.0\r\n  },\r\n  {\r\n    \"id\": 913,\r\n    \"userId\": 5,\r\n    \"date\": \"2023-08-29T19:01:19\",\r\n    \"amount\": 160.0\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}/multiple",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}",
+								"multiple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sale By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}/633",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}",
+								"633"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}/user/5",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Purchase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 10,\r\n    \"userId\": 6,\r\n    \"date\": \"2023-08-29T19:01:30\",\r\n    \"amount\": 100.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Purchase",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 10,\r\n    \"userId\": 7,\r\n    \"date\": \"2023-08-29T19:01:40\",\r\n    \"amount\": 200.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}/10",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Purchase",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}/10",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Amount By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}/amount/1",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}",
+								"amount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{mongodb}}/{{sales}}/healthcheck",
+							"host": [
+								"{{mongodb}}"
+							],
+							"path": [
+								"{{sales}}",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PostgreSQL",
+			"item": [
+				{
+					"name": "Get Sales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{postgresql}}/{{sales}}",
+							"host": [
+								"{{postgresql}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sale By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{postgresql}}/{{sales}}/49",
+							"host": [
+								"{{postgresql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{postgresql}}/{{sales}}/user/5",
+							"host": [
+								"{{postgresql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Sale",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 6,\r\n    \"amount\": 100.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{postgresql}}/{{sales}}",
+							"host": [
+								"{{postgresql}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Sale",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 7,\r\n    \"amount\": 150.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{postgresql}}/{{sales}}/51",
+							"host": [
+								"{{postgresql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Sale",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{postgresql}}/{{sales}}/51",
+							"host": [
+								"{{postgresql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Amount By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{postgresql}}/{{sales}}/amount/1",
+							"host": [
+								"{{postgresql}}"
+							],
+							"path": [
+								"{{sales}}",
+								"amount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "H2",
+			"item": [
+				{
+					"name": "Get Sales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{h2}}/{{sales}}",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sale By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{h2}}/{{sales}}/49",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}",
+								"49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{h2}}/{{sales}}/user/5",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Sale",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 6,\r\n    \"amount\": 100.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{h2}}/{{sales}}",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Sale",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 7,\r\n    \"amount\": 150.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{h2}}/{{sales}}/51",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Sale",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{h2}}/{{sales}}/51",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Amount By User Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{h2}}/{{sales}}/amount/1",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}",
+								"amount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{h2}}/{{sales}}/healthcheck",
+							"host": [
+								"{{h2}}"
+							],
+							"path": [
+								"{{sales}}",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Eureka",
+			"item": [
+				{
+					"name": "Get Clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eureka}}/{{clients}}",
+							"host": [
+								"{{eureka}}"
+							],
+							"path": [
+								"{{clients}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Client By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eureka}}/{{clients}}/5",
+							"host": [
+								"{{eureka}}"
+							],
+							"path": [
+								"{{clients}}",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Adrian David\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eureka}}/{{clients}}",
+							"host": [
+								"{{eureka}}"
+							],
+							"path": [
+								"{{clients}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Client Sales Amount By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eureka}}/{{clients}}/amount/1",
+							"host": [
+								"{{eureka}}"
+							],
+							"path": [
+								"{{clients}}",
+								"amount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ribbon",
+			"item": [
+				{
+					"name": "Get Client Sales Amount By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ribbon}}/{{clients}}/amount/1",
+							"host": [
+								"{{ribbon}}"
+							],
+							"path": [
+								"{{clients}}",
+								"amount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "mysql",
+			"value": "localhost:8081",
+			"type": "string"
+		},
+		{
+			"key": "mongodb",
+			"value": "localhost:8082",
+			"type": "string"
+		},
+		{
+			"key": "postgresql",
+			"value": "localhost:8083",
+			"type": "string"
+		},
+		{
+			"key": "h2",
+			"value": "localhost:8084",
+			"type": "string"
+		},
+		{
+			"key": "sales",
+			"value": "api/sales",
+			"type": "string"
+		},
+		{
+			"key": "eureka",
+			"value": "localhost:8085",
+			"type": "string"
+		},
+		{
+			"key": "ribbon",
+			"value": "localhost:8086",
+			"type": "string"
+		},
+		{
+			"key": "clients",
+			"value": "api/clients",
+			"type": "string"
+		}
+	]
+}
