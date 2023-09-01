@@ -35,7 +35,7 @@ The project is divided into several modules:
 
 1. Clone this repository:
 
-https://github.com/ahincho/spring-microservices-eureka-ribbon
+https://github.com/ahincho/spring-microservices-sales-clients
 
 2. Navigate to the desired module:
 
